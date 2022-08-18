@@ -2,7 +2,7 @@ package com.company.Searching.Questions.Count_1s_in_a_Sorted_Binary_Array;
 
 // Count 1s in a Sorted Binary Array
 
-public class bestcase {
+public class Efficient {
     public static void main(String[] args) {
         int[] arr={0,0,0,0,1,1,1,1,1,1};
         int ans=countOnes(arr);

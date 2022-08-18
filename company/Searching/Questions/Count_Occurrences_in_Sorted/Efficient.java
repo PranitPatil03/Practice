@@ -1,6 +1,6 @@
 package com.company.Searching.Questions.Count_Occurrences_in_Sorted;
 
-public class bestcase {
+public class Efficient {
     public static void main(String[] args) {
         int[] arr={1,2,4,5,5,5,5,5,6,7,7,8};
 

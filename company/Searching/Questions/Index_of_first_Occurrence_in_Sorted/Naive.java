@@ -1,6 +1,6 @@
 package com.company.Searching.Questions.Index_of_first_Occurrence_in_Sorted;
 
-public class Navie {
+public class Naive {
     public static void main(String[] args) {
 
         int[] arr={1,2,4,5,5,6,7,7,8};
