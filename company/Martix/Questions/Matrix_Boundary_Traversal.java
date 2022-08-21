@@ -8,13 +8,13 @@ package com.company.Martix.Questions;
 public class Matrix_Boundary_Traversal {
     public static void main(String[] args) {
         int[][] arr={
-                {1,2,3,4,5},
-                {6,7,8,9,10},
-                {11,12,13,14,15}
+                {1,2,3},
+                {6,7,8},
+                {1,5,3}
         };
-        boundarytrav(3,5,arr);
+        boundary_traversal(3,3,arr);
     }
-    static void boundarytrav(int r,int c,int[][]arr){
+    static void boundary_traversal(int r,int c,int[][]arr){
         if(r==1){
             for (int i = 0; i <c; i++) {
                 System.out.print(arr[0][i]+" ");
