@@ -10,7 +10,9 @@ public class Efficient {
                 {27, 29, 35, 45},
                 {32, 33, 39, 50}
         };
-//        search(arr,375,4,4);
+        search(arr,375,4,4);
+        System.out.println(arr.length);
+
     }
     static void search(int[][] arr,int x,int R,int C){
         int i=0,j=C-1;
