@@ -7,7 +7,6 @@ class Node{
         data=x;
         next=null;
     }
-
 }
 public class Naive {
     public static void main(String[] args) {
@@ -16,9 +15,10 @@ public class Naive {
         head.next.next=new Node(30);
         head.next.next.next=new Node(40);
         head.next.next.next.next=new Node(50);
+        head.next.next.next.next.next=new Node(60);
 
         printlist(head);
-        head =reversebyk(head,3);
+        head=reversebyk(head, 3);
         printlist(head);
     }
     public static void printlist(Node head){
@@ -37,10 +37,14 @@ public class Naive {
         while(curr!=null && count<k){
             next=curr.next;
             curr.next=prev;
-            prev=next;
+            prev=curr;
             curr=next;
             count++;
         }
-        return head;
+        if (next!=null){
+            Node rest_head=reversebyk(next,k);
+            head.next=rest_head;
+        }
+        return prev;
     }
 }
